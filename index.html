@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo">
+                <img src="./assests/Logo.png" alt="company logo">
+            </a>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Eg:Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+   <div class="body-content ">
+
+  <main class="flex">
+    <div class="cards-container container flex" id="cards-container">
+       
+    </div>
+  </main>
+
+
+  <template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" id="news-img" alt="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">this is title</h3>
+            <h6 class="news-source" id="news-source">date</h6>
+            <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a magnam eius ea, quod delectus ab blanditiis, facilis corporis, quisquam dolor laboriosam deserunt praesentium eos doloribus consequatur odit assumenda vel!</p>
+        </div>
+    </div>
+  </template>
+
+  <div class="latest-title">
+    <h2>Latest News</h2>
+    <div class="latest-news" id="latest-news" >
+      </div>
+  </div>
+ 
+
+ <template id="latest-news-card">
+   
+        <div class="latest-content">
+            <h3 id="latest-news-title">this is title</h3>
+            <p class="latest-news-source" id="latest-news-source">date</p>
+        </div>
+    
+    
+
+ </template>
+
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
